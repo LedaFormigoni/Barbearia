@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="sair">Logout</button>
+    <h1>Tela principal</h1>
+    <h2 id="nome_usuario"></h2>
+    <h1>Cadastrar Cliente</h1>
+    <div>
+      <input type="text" id="nome" placeholder="Nome do Cliente" />
+      <input type="text" id="cpf" placeholder="CPF sem . e -" />
+      <button type="button" id="enviar_cliente">Cadastrar Cliente</button>
+    </div>
+
+    <h1>Cadastrar Agendamento</h1>
+    <div>
+      <input
+        type="datetime-local"
+        id="data_agend"
+        placeholder="Data do agendamento"
+      />
+      <select name="" id="id_servico"></select>
+      <select name="" id="id_cliente"></select>
+      <button type="button" id="enviar_agend">Cadastrar Agendamento</button>
+    </div>
+
+    <h1>Cadastrar Serviço</h1>
+    <div>
+      <input type="text" id="nome_servico" placeholder="Nome do Serviço" />
+      <input type="text" id="valor_servico" placeholder="Valor Serviço" />
+      <button type="button" id="enviar_servico">Cadastrar Serviço</button>
+    </div>
+    <div>
+      <input type="text" id="procurar">
+      <button id="buscar" type="button">🔎</button>
+    </div>
+
+    <div id="vazia"></div>
+    <script src="index.js"></script>
+  </body>
+</html>
